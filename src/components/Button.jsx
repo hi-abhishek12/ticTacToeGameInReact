@@ -11,9 +11,7 @@ function Button({ children, className = "", onClick, ...props }) {
         "focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2",
         "cursor-pointer disabled:cursor-not-allowed disabled:opacity-50",
         className,
-      ]
-        .filter(Boolean)
-        .join(" ")}
+      ].join(" ")}
       {...props}
     >
       {children ?? "Reset"}

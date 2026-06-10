@@ -26,7 +26,7 @@ function getWinner(board) {
 
 function App() {
   const [board, setBoard] = useState(Array(9).fill(null));
-  const [currentPlayer, setCurrentPlayer] = useState("X");
+  const [currentPlayer, setCurrentPlayer] = useState("O");
   const [gameResult, setGameResult] = useState("");
   const [winningLine, setWinningLine] = useState(null);
 
@@ -58,7 +58,7 @@ function App() {
 
   const resetGame = () => {
     setBoard(Array(9).fill(null));
-    setCurrentPlayer("X");
+    setCurrentPlayer("O");
     setGameResult("");
     setWinningLine(null);
   };
